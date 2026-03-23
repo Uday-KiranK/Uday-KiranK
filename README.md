@@ -46,7 +46,7 @@
 
 ---
 
-## ~/projects
+## ~/Featured_projects
 
 ### Sparkur – Food Delivery Platform
 
