@@ -19,20 +19,17 @@
   <a href="https://github.com/Uday-KiranK?tab=repositories">
     <img src="https://raw.githubusercontent.com/Uday-KiranK/Uday-KiranK/main/svgs/projects.svg" width="860"/>
   </a>
-</p style = "font-weight='900'">
-&nbsp;&nbsp;&nbsp;&nbsp; stats
+</p>
+### &nbsp;&nbsp;&nbsp;&nbsp;`▶ ~/stats`
 <p align="center">
   <a href="#">
-    <img src="https://github-readme-stats.vercel.app/api?username=Uday-KiranK&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0d0d0d&title_color=6ee600&icon_color=6ee600&text_color=a0c870&border_radius=12" width="420"/>
-  </a>
-  <a href="#">
-    <img src="https://streak-stats.demolab.com?user=Uday-KiranK&theme=dark&hide_border=true&background=0d0d0d&ring=6ee600&fire=6ee600&currStreakLabel=6ee600&sideLabels=6ee600&dates=4a6a20&border_radius=12" width="420"/>
+    <img src="https://raw.githubusercontent.com/Uday-KiranK/Uday-KiranK/main/svgs/stats.svg" width="860"/>
   </a>
 </p>
-&nbsp;&nbsp;&nbsp;&nbsp; contributions
+### &nbsp;&nbsp;&nbsp;&nbsp;`▶ ~/contributions`
 <p align="center">
   <a href="#">
-    <img src="https://github.com/Uday-KiranK/Uday-KiranK/blob/output/github-contribution-grid-snake.svg" width="860"/>
+    <img src="https://raw.githubusercontent.com/Uday-KiranK/Uday-KiranK/main/svgs/contributions.svg" width="860"/>
   </a>
 </p>
 <p align="center">
@@ -40,9 +37,23 @@
     <img src="https://raw.githubusercontent.com/Uday-KiranK/Uday-KiranK/main/svgs/interests.svg" width="860"/>
   </a>
 </p>
+### &nbsp;&nbsp;&nbsp;&nbsp;`▶ ~/establish_link`
 <p align="center">
   <a href="#">
     <img src="https://raw.githubusercontent.com/Uday-KiranK/Uday-KiranK/main/svgs/connect.svg" width="860"/>
+  </a>
+</p>
+<p align="center">
+  <a href="mailto:uday.kottakota.k@gmail.com">
+    <img src="https://img.shields.io/badge/📧_EMAIL-uday.kottakota.k@gmail.com-6ee600?style=for-the-badge&labelColor=0d0d0d&color=6ee600"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://linkedin.com/in/uday-kiran-k-aa0710340">
+    <img src="https://img.shields.io/badge/💼_LINKEDIN-uday--kiran--k--aa0710340-6ee600?style=for-the-badge&labelColor=0d0d0d&color=6ee600"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/Uday-KiranK">
+    <img src="https://img.shields.io/badge/🔗_GITHUB-Uday--KiranK-6ee600?style=for-the-badge&labelColor=0d0d0d&color=6ee600"/>
   </a>
 </p>
 <p align="center">
