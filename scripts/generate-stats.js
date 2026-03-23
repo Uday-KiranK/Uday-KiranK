@@ -3,22 +3,22 @@ import fs from "fs";
 const username = "Uday-KiranK";
 
 async function getStats() {
+  // 🔥 Fetch basic data
   const res = await fetch(`https://api.github.com/users/${username}`);
-  const data = await res.json();
+  const user = await res.json();
 
-  const stats = {
-    repos: data.public_repos,
-  };
+  // 👉 Load your SVG template (IMPORTANT)
+  let svg = fs.readFileSync("svgs/stats.svg", "utf-8");
 
-  // You can expand later with more APIs
+  // 🔥 Replace values (for now some static placeholders)
+  svg = svg.replaceAll("{{TOTAL_CONTRIBUTIONS}}", "N/A");
+  svg = svg.replaceAll("{{REPOS_CREATED}}", user.public_repos.toString());
+  svg = svg.replaceAll("{{CURRENT_STREAK}}", "N/A");
+  svg = svg.replaceAll("{{COMMITS_THIS_YEAR}}", "N/A");
+  svg = svg.replaceAll("{{LONGEST_STREAK}}", "N/A");
+  svg = svg.replaceAll("{{PULL_REQUESTS}}", "N/A");
 
-  const svg = `
-<svg width="860" height="200" viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="860" height="200" rx="12" fill="#0d0d0d"/>
-  <text x="60" y="105" font-family="monospace" font-size="20" fill="#6ee600">${stats.repos}</text>
-</svg>
-`;
-
+  // 👉 Write final SVG
   fs.writeFileSync("svgs/stats.svg", svg);
 }
 
