@@ -1,0 +1,32 @@
+<svg width="860" height="160" viewBox="0 0 860 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6ee600" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#6ee600" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#6ee600" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0L0 0 0 40" fill="none" stroke="#6ee600" stroke-width="0.3" opacity="0.07"/>
+    </pattern>
+  </defs>
+  <rect width="860" height="160" rx="12" fill="#0d0d0d"/>
+  <rect width="860" height="160" rx="12" fill="url(#g)"/>
+  <rect width="860" height="2" rx="1" fill="url(#tl)"/>
+  <rect width="860" height="160" rx="12" fill="none" stroke="#1a3a00" stroke-width="1"/>
+  <path d="M16 40L16 16L40 16" fill="none" stroke="#2a5000" stroke-width="1.5"/>
+  <path d="M820 16L844 16L844 40" fill="none" stroke="#2a5000" stroke-width="1.5"/>
+  <text x="32" y="44" font-family="monospace" font-size="11" fill="#6ee600" letter-spacing="3" font-weight="bold">&#9658; ~/ALIEN_FORMS</text>
+  <rect x="32" y="50" width="796" height="1" fill="#1a3a00"/>
+  <rect x="32" y="66" width="256" height="74" rx="8" fill="#080808" stroke="#1a3a00" stroke-width="1"/>
+  <text x="72" y="98" font-family="monospace" font-size="24" fill="#6ee600">&#128274;</text>
+  <text x="120" y="96" font-family="monospace" font-size="13" fill="#c8e6a0">Cybersecurity</text>
+  <text x="120" y="114" font-family="monospace" font-size="10" fill="#4a6a20">CTFs and ethical hacking</text>
+  <rect x="302" y="66" width="256" height="74" rx="8" fill="#080808" stroke="#1a3a00" stroke-width="1"/>
+  <text x="342" y="98" font-family="monospace" font-size="24" fill="#6ee600">&#127918;</text>
+  <text x="390" y="96" font-family="monospace" font-size="13" fill="#c8e6a0">Game Dev</text>
+  <text x="390" y="114" font-family="monospace" font-size="10" fill="#4a6a20">Gaming and building worlds</text>
+  <rect x="572" y="66" width="256" height="74" rx="8" fill="#080808" stroke="#1a3a00" stroke-width="1"/>
+  <text x="612" y="98" font-family="monospace" font-size="24" fill="#6ee600">&#9935;</text>
+  <text x="660" y="96" font-family="monospace" font-size="13" fill="#c8e6a0">Blockchain</text>
+  <text x="660" y="114" font-family="monospace" font-size="10" fill="#4a6a20">Web3 and decentralization</text>
+</svg>

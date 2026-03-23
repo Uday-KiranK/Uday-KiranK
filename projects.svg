@@ -1,0 +1,84 @@
+<svg width="860" height="420" viewBox="0 0 860 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6ee600" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#6ee600" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#6ee600" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0L0 0 0 40" fill="none" stroke="#6ee600" stroke-width="0.3" opacity="0.07"/>
+    </pattern>
+  </defs>
+  <rect width="860" height="420" rx="12" fill="#0d0d0d"/>
+  <rect width="860" height="420" rx="12" fill="url(#g)"/>
+  <rect width="860" height="2" rx="1" fill="url(#tl)"/>
+  <rect width="860" height="420" rx="12" fill="none" stroke="#1a3a00" stroke-width="1"/>
+  <path d="M16 40L16 16L40 16" fill="none" stroke="#2a5000" stroke-width="1.5"/>
+  <path d="M820 16L844 16L844 40" fill="none" stroke="#2a5000" stroke-width="1.5"/>
+  <path d="M16 380L16 404L40 404" fill="none" stroke="#2a5000" stroke-width="1.5"/>
+  <path d="M820 404L844 404L844 380" fill="none" stroke="#2a5000" stroke-width="1.5"/>
+  <text x="32" y="44" font-family="monospace" font-size="11" fill="#6ee600" letter-spacing="3" font-weight="bold">&#9658; ~/FEATURED_MISSIONS</text>
+  <rect x="32" y="50" width="796" height="1" fill="#1a3a00"/>
+  <rect x="32" y="66" width="390" height="150" rx="8" fill="#080808" stroke="#1a3a00" stroke-width="1"/>
+  <rect x="32" y="66" width="3" height="150" rx="1" fill="#6ee600"/>
+  <text x="50" y="90" font-family="monospace" font-size="13" fill="#6ee600" font-weight="bold">Sparkur</text>
+  <rect x="358" y="74" width="58" height="18" rx="4" fill="#0a1f00" stroke="#2a5000" stroke-width="1"/>
+  <text x="387" y="87" font-family="monospace" font-size="9" fill="#6ee600" text-anchor="middle" letter-spacing="1">LIVE</text>
+  <text x="50" y="110" font-family="monospace" font-size="10" fill="#4a6a20">Food Delivery Platform</text>
+  <text x="50" y="128" font-family="monospace" font-size="11" fill="#7a9a50">Role-based access, real-time</text>
+  <text x="50" y="144" font-family="monospace" font-size="11" fill="#7a9a50">notifications and concurrent users</text>
+  <rect x="50" y="158" width="70" height="20" rx="4" fill="#0d1a00" stroke="#1a3a00" stroke-width="1"/>
+  <text x="85" y="172" font-family="monospace" font-size="9" fill="#6ee600" text-anchor="middle">Node.js</text>
+  <rect x="128" y="158" width="86" height="20" rx="4" fill="#0d1a00" stroke="#1a3a00" stroke-width="1"/>
+  <text x="171" y="172" font-family="monospace" font-size="9" fill="#6ee600" text-anchor="middle">PostgreSQL</text>
+  <rect x="222" y="158" width="96" height="20" rx="4" fill="#0d1a00" stroke="#1a3a00" stroke-width="1"/>
+  <text x="270" y="172" font-family="monospace" font-size="9" fill="#6ee600" text-anchor="middle">Tailwind CSS</text>
+  <rect x="326" y="158" width="84" height="20" rx="4" fill="#0d1a00" stroke="#1a3a00" stroke-width="1"/>
+  <text x="368" y="172" font-family="monospace" font-size="9" fill="#6ee600" text-anchor="middle">WebSockets</text>
+  <rect x="438" y="66" width="390" height="150" rx="8" fill="#080808" stroke="#1a3a00" stroke-width="1"/>
+  <rect x="438" y="66" width="3" height="150" rx="1" fill="#3d8000"/>
+  <text x="456" y="90" font-family="monospace" font-size="13" fill="#6ee600" font-weight="bold">MedTrack</text>
+  <rect x="738" y="74" width="82" height="18" rx="4" fill="#1a1000" stroke="#604000" stroke-width="1"/>
+  <text x="779" y="87" font-family="monospace" font-size="9" fill="#c88000" text-anchor="middle" letter-spacing="1">IN PROGRESS</text>
+  <text x="456" y="110" font-family="monospace" font-size="10" fill="#4a6a20">Healthcare Assistant</text>
+  <text x="456" y="128" font-family="monospace" font-size="11" fill="#7a9a50">Prescription mgmt and lab</text>
+  <text x="456" y="144" font-family="monospace" font-size="11" fill="#7a9a50">report analysis via OCR</text>
+  <rect x="456" y="158" width="106" height="20" rx="4" fill="#0d1a00" stroke="#1a3a00" stroke-width="1"/>
+  <text x="509" y="172" font-family="monospace" font-size="9" fill="#6ee600" text-anchor="middle">React Native</text>
+  <rect x="570" y="158" width="70" height="20" rx="4" fill="#0d1a00" stroke="#1a3a00" stroke-width="1"/>
+  <text x="605" y="172" font-family="monospace" font-size="9" fill="#6ee600" text-anchor="middle">Node.js</text>
+  <rect x="648" y="158" width="44" height="20" rx="4" fill="#0d1a00" stroke="#1a3a00" stroke-width="1"/>
+  <text x="670" y="172" font-family="monospace" font-size="9" fill="#6ee600" text-anchor="middle">OCR</text>
+  <rect x="32" y="230" width="390" height="150" rx="8" fill="#080808" stroke="#1a3a00" stroke-width="1"/>
+  <rect x="32" y="230" width="3" height="150" rx="1" fill="#3d8000"/>
+  <text x="50" y="254" font-family="monospace" font-size="13" fill="#6ee600" font-weight="bold">AdReward</text>
+  <rect x="322" y="240" width="82" height="18" rx="4" fill="#1a1000" stroke="#604000" stroke-width="1"/>
+  <text x="363" y="253" font-family="monospace" font-size="9" fill="#c88000" text-anchor="middle" letter-spacing="1">IN PROGRESS</text>
+  <text x="50" y="274" font-family="monospace" font-size="10" fill="#4a6a20">Decentralized Ad Platform</text>
+  <text x="50" y="292" font-family="monospace" font-size="11" fill="#7a9a50">Blockchain rewards for verified</text>
+  <text x="50" y="308" font-family="monospace" font-size="11" fill="#7a9a50">ad engagement via MetaMask</text>
+  <rect x="50" y="322" width="70" height="20" rx="4" fill="#0d1a00" stroke="#1a3a00" stroke-width="1"/>
+  <text x="85" y="336" font-family="monospace" font-size="9" fill="#6ee600" text-anchor="middle">Solidity</text>
+  <rect x="128" y="322" width="80" height="20" rx="4" fill="#0d1a00" stroke="#1a3a00" stroke-width="1"/>
+  <text x="168" y="336" font-family="monospace" font-size="9" fill="#6ee600" text-anchor="middle">Ethereum</text>
+  <rect x="216" y="322" width="58" height="20" rx="4" fill="#0d1a00" stroke="#1a3a00" stroke-width="1"/>
+  <text x="245" y="336" font-family="monospace" font-size="9" fill="#6ee600" text-anchor="middle">React</text>
+  <rect x="282" y="322" width="80" height="20" rx="4" fill="#0d1a00" stroke="#1a3a00" stroke-width="1"/>
+  <text x="322" y="336" font-family="monospace" font-size="9" fill="#6ee600" text-anchor="middle">MetaMask</text>
+  <rect x="438" y="230" width="390" height="150" rx="8" fill="#080808" stroke="#1a3a00" stroke-width="1"/>
+  <rect x="438" y="230" width="3" height="150" rx="1" fill="#6ee600"/>
+  <text x="456" y="254" font-family="monospace" font-size="13" fill="#6ee600" font-weight="bold">Tic Tac Toe AI</text>
+  <rect x="750" y="240" width="58" height="18" rx="4" fill="#0a1f00" stroke="#2a5000" stroke-width="1"/>
+  <text x="779" y="253" font-family="monospace" font-size="9" fill="#6ee600" text-anchor="middle" letter-spacing="1">LIVE</text>
+  <text x="456" y="274" font-family="monospace" font-size="10" fill="#4a6a20">Multiplayer AI Game</text>
+  <text x="456" y="292" font-family="monospace" font-size="11" fill="#7a9a50">Alpha-Beta Pruning AI with</text>
+  <text x="456" y="308" font-family="monospace" font-size="11" fill="#7a9a50">real-time WebSocket gameplay</text>
+  <rect x="456" y="322" width="100" height="20" rx="4" fill="#0d1a00" stroke="#1a3a00" stroke-width="1"/>
+  <text x="506" y="336" font-family="monospace" font-size="9" fill="#6ee600" text-anchor="middle">JavaScript</text>
+  <rect x="564" y="322" width="90" height="20" rx="4" fill="#0d1a00" stroke="#1a3a00" stroke-width="1"/>
+  <text x="609" y="336" font-family="monospace" font-size="9" fill="#6ee600" text-anchor="middle">WebSockets</text>
+  <rect x="662" y="322" width="40" height="20" rx="4" fill="#0d1a00" stroke="#1a3a00" stroke-width="1"/>
+  <text x="682" y="336" font-family="monospace" font-size="9" fill="#6ee600" text-anchor="middle">AI</text>
+  <circle cx="32" cy="412" r="3.5" fill="#6ee600"/>
+  <text x="44" y="416" font-family="monospace" font-size="9" fill="#3d5c00" letter-spacing="1">4 MISSIONS LOADED // 2 LIVE // 2 IN PROGRESS</text>
+</svg>
