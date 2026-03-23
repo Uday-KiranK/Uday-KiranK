@@ -11,28 +11,31 @@ function fetchRepos(page) {
       "/repos?per_page=100&page=" +
       page;
 
-    https
-      .get(
-        url,
-        {
-          headers: {
-            "User-Agent": "node"
-          }
-        },
-        (res) => {
-          let data = "";
-
-          res.on("data", (chunk) => (data += chunk));
-          res.on("end", () => {
-            try {
-              resolve(JSON.parse(data));
-            } catch (e) {
-              reject(e);
-            }
-          });
+    https.get(
+      url,
+      {
+        headers: {
+          "User-Agent": "node"
         }
-      )
-      .on("error", reject);
+      },
+      (res) => {
+        let data = "";
+
+        res.on("data", (chunk) => {
+          data += chunk;
+        });
+
+        res.on("end", () => {
+          try {
+            resolve(JSON.parse(data));
+          } catch (err) {
+            reject(err);
+          }
+        });
+      }
+    ).on("error", (err) => {
+      reject(err);
+    });
   });
 }
 
@@ -41,15 +44,18 @@ async function getStats() {
   let totalRepos = 0;
 
   while (true) {
-    const data = await fetchRepos(page);
+    const repos = await fetchRepos(page);
 
-    if (!Array.isArray(data) || data.length === 0) break;
+    if (!Array.isArray(repos) || repos.length === 0) {
+      break;
+    }
 
-    totalRepos += data.length;
+    totalRepos += repos.length;
     page++;
   }
 
   let svg = fs.readFileSync("svgs/stats-template.svg", "utf-8");
+
   svg = svg.replace("{{REPO_COUNT}}", totalRepos.toString());
 
   fs.writeFileSync("svgs/stats.svg", svg);
