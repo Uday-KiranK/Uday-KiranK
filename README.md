@@ -10,15 +10,30 @@
 
 ---
 
-## About Me
-
-Hi, I'm UK. I’m a Computer Science student at IIIT Dharwad, focused on building scalable and reliable systems.
-
-I’ve worked on full-stack applications, mobile apps, and blockchain-based systems. Currently, I’m exploring cybersecurity while continuing to improve my development skills.
+```bash
+> initializing profile...
+> loading user: uday-kirank
+> role: full stack developer
+> status: building, breaking, learning
+> system: online
+```
 
 ---
 
-## Tech Stack
+## ~/about
+
+```bash
+> about me
+
+- cs student @ iiit dharwad
+- interested in scalable and reliable systems
+- experience with full stack, mobile apps, and blockchain
+- currently exploring cybersecurity
+```
+
+---
+
+## ~/stack
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=c,cpp,java,html,css,js,nodejs,express,react,bootstrap,tailwind,python,unity,git,linux,docker,mongodb,postgres" />
@@ -31,7 +46,7 @@ I’ve worked on full-stack applications, mobile apps, and blockchain-based syst
 
 ---
 
-## Featured Projects
+## ~/projects
 
 ### Sparkur – Food Delivery Platform
 
@@ -70,52 +85,62 @@ A web-based multiplayer Tic Tac Toe game with AI move recommendations.
 
 ---
 
-## GitHub Stats
+## ~/stats
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Uday-KiranK&show_icons=true&theme=tokyonight&hide_border=true" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Uday-KiranK&layout=compact&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Uday-KiranK&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Uday-KiranK&theme=tokyonight&hide_border=true" />
+  <img src="https://streak-stats.demolab.com?user=Uday-KiranK&theme=tokyonight&hide_border=true&background=00000000" />
 </p>
 
 ---
 
-## Contribution Graph
+## ~/contributions
 
 ![snake gif](https://github.com/Uday-KiranK/Uday-KiranK/blob/output/github-contribution-grid-snake.svg)
 
 ---
 
-## Visitors
+## ~/visitors
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Uday-KiranK&label=Profile%20views&color=0e75b6&style=flat" />
+  <img src="https://komarev.com/ghpvc/?username=Uday-KiranK&label=profile%20views&color=0e75b6&style=flat" />
 </p>
 
 ---
 
-## Interests
+## ~/interests
 
-* Cybersecurity
-* Game Development & Gaming
-* Blockchain
-
----
-
-## Contact
-
-* Email: [uday.kottakota.k@gmail.com](mailto:uday.kottakota.k@gmail.com)
-* LinkedIn: https://linkedin.com/in/uday-kiran-k-aa0710340
-* GitHub: https://github.com/Uday-KiranK
+* cybersecurity
+* game development & gaming
+* blockchain
 
 ---
 
-## Final Message
+## ~/connect
+
+* email: [uday.kottakota.k@gmail.com](mailto:uday.kottakota.k@gmail.com)
+* linkedin: https://linkedin.com/in/uday-kiran-k-aa0710340
+* github: https://github.com/Uday-KiranK
+
+---
 
 ```bash
-Everything happens for our own good…
+> while(true) {
+>   learn();
+>   build();
+>   break();
+>   repeat();
+> }
+```
+
+---
+
+## ~/final_message
+
+```bash
+everything happens for our own good…
 even when the code breaks for the millionth time.
 ```
