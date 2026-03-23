@@ -6,26 +6,34 @@ const username = "Uday-KiranK";
 
 function fetchRepos(page) {
   return new Promise((resolve, reject) => {
-    https.get(
-      `https://api.github.com/users/${username}/repos?per_page=100&page=${page}`,
-      {
-        headers: {
-          "User-Agent": "node"
-        }
-      },
-      (res) => {
-        let data = "";
+    const url =
+      "https://api.github.com/users/" +
+      username +
+      "/repos?per_page=100&page=" +
+      page;
 
-        res.on("data", (chunk) => (data += chunk));
-        res.on("end", () => {
-          try {
-            resolve(JSON.parse(data));
-          } catch (e) {
-            reject(e);
+    https
+      .get(
+        url,
+        {
+          headers: {
+            "User-Agent": "node"
           }
-        });
-      }
-    ).on("error", reject);
+        },
+        (res) => {
+          let data = "";
+
+          res.on("data", (chunk) => (data += chunk));
+          res.on("end", () => {
+            try {
+              resolve(JSON.parse(data));
+            } catch (e) {
+              reject(e);
+            }
+          });
+        }
+      )
+      .on("error", reject);
   });
 }
 
