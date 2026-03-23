@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Uday Kiran K — GitHub Profile</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet"/>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --g: #6ee600;
+  --g2: #3d8000;
+  --g3: #1a3a00;
+  --dark: #080808;
+  --card: #0d0d0d;
+  --border: #1a2e00;
+  --text: #c8e6a0;
+  --dim: #4a6a20;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--dark);
+  color: var(--text);
+  font-family: 'Share Tech Mono', monospace;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── SCANLINES overlay ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.12) 2px,
+    rgba(0,0,0,0.12) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* ── GRID bg ── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(110,230,0,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(110,230,0,0.025) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.page { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 40px 24px 80px; }
+
+/* ── SECTION WRAPPER ── */
+.section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+  animation: fadeUp 0.6s ease both;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--g), transparent);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* stagger children */
+.section:nth-child(1)  { animation-delay: 0.05s; }
+.section:nth-child(2)  { animation-delay: 0.12s; }
+.section:nth-child(3)  { animation-delay: 0.18s; }
+.section:nth-child(4)  { animation-delay: 0.24s; }
+.section:nth-child(5)  { animation-delay: 0.30s; }
+.section:nth-child(6)  { animation-delay: 0.36s; }
+.section:nth-child(7)  { animation-delay: 0.42s; }
+.section:nth-child(8)  { animation-delay: 0.48s; }
+.section:nth-child(9)  { animation-delay: 0.54s; }
+.section:nth-child(10) { animation-delay: 0.60s; }
+
+/* ── SECTION HEADER ── */
+.sec-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--g);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sec-title::before {
+  content: '▶';
+  font-size: 9px;
+  color: var(--g2);
+}
+
+.sec-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border), transparent);
+}
+
+/* ── HERO ── */
+.hero {
+  text-align: center;
+  padding: 48px 32px 40px;
+}
+
+.hero-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  color: #f0f0f0;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.hero-name span { color: var(--g); }
+
+.hero-sub {
+  font-size: 12px;
+  color: var(--dim);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.typing-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 26px;
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 18px;
+  background: var(--g);
+  animation: blink-cursor 0.8s step-end infinite;
+  vertical-align: middle;
+}
+
+@keyframes blink-cursor {
+  0%,100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+
+.typing-text {
+  font-size: 15px;
+  color: var(--g);
+  letter-spacing: 0.08em;
+  min-height: 22px;
+}
+
+/* hero corner decorations */
+.hero-deco {
+  position: absolute;
+  width: 60px; height: 60px;
+  border-color: var(--border);
+  border-style: solid;
+  opacity: 0.6;
+}
+.hero-deco.tl { top: 16px; left: 16px; border-width: 2px 0 0 2px; border-radius: 6px 0 0 0; }
+.hero-deco.tr { top: 16px; right: 16px; border-width: 2px 2px 0 0; border-radius: 0 6px 0 0; }
+.hero-deco.bl { bottom: 16px; left: 16px; border-width: 0 0 2px 2px; border-radius: 0 0 0 6px; }
+.hero-deco.br { bottom: 16px; right: 16px; border-width: 0 2px 2px 0; border-radius: 0 0 6px 0; }
+
+/* pulse ring on hero */
+.hero-pulse {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; height: 300px;
+  border: 1px solid var(--g3);
+  border-radius: 50%;
+  animation: pulse-ring 3s ease-out infinite;
+  pointer-events: none;
+}
+.hero-pulse:nth-child(2) { animation-delay: 1s; }
+.hero-pulse:nth-child(3) { animation-delay: 2s; }
+
+@keyframes pulse-ring {
+  0%   { transform: translate(-50%,-50%) scale(0.5); opacity: 0.6; }
+  100% { transform: translate(-50%,-50%) scale(1.4); opacity: 0; }
+}
+
+/* ── TERMINAL BLOCK ── */
+.terminal {
+  background: #050505;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 20px;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.terminal .prompt { color: var(--dim); }
+.terminal .cmd    { color: var(--g); }
+.terminal .val    { color: #a8cc70; }
+.terminal .comment { color: #2a4400; }
+
+/* ── ABOUT GRID ── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.about-item {
+  background: #080808;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.about-item .icon {
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.about-item strong { color: var(--g); font-weight: 400; display: block; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 2px; }
+
+/* ── STACK GRID ── */
+.stack-group { margin-bottom: 20px; }
+.stack-label { font-size: 10px; color: var(--dim); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 10px; }
+
+.tech-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  background: #060606;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-size: 12px;
+  color: var(--text);
+  letter-spacing: 0.06em;
+  transition: border-color 0.2s, color 0.2s;
+  cursor: default;
+}
+
+.chip:hover {
+  border-color: var(--g);
+  color: var(--g);
+}
+
+.chip.highlight {
+  border-color: var(--g2);
+  color: var(--g);
+}
+
+/* ── PROJECT CARDS ── */
+.project-card {
+  background: #060606;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.25s;
+}
+
+.project-card:hover { border-color: var(--g2); }
+
+.project-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px; height: 100%;
+  background: var(--g);
+  border-radius: 10px 0 0 10px;
+}
+
+.proj-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.proj-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--g);
+  letter-spacing: 0.06em;
+}
+
+.proj-status {
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.status-live    { background: rgba(110,230,0,0.1);  border: 1px solid var(--g2); color: var(--g); }
+.status-wip     { background: rgba(255,160,0,0.08); border: 1px solid #604000;  color: #c88000; }
+
+.proj-desc {
+  font-size: 13px;
+  color: #7a9a50;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.proj-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.proj-tag {
+  font-size: 10px;
+  background: var(--g3);
+  color: var(--g);
+  border-radius: 4px;
+  padding: 2px 8px;
+  letter-spacing: 0.08em;
+}
+
+/* ── STATS GRID ── */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.stats-grid img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+/* ── INTERESTS ── */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.interest-card {
+  background: #060606;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 16px;
+  text-align: center;
+  transition: border-color 0.2s, transform 0.2s;
+  cursor: default;
+}
+
+.interest-card:hover {
+  border-color: var(--g);
+  transform: translateY(-3px);
+}
+
+.interest-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.interest-label {
+  font-size: 11px;
+  color: var(--g);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ── CONNECT ── */
+.connect-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.connect-link {
+  background: #060606;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s;
+  display: block;
+}
+
+.connect-link:hover {
+  border-color: var(--g);
+  transform: translateY(-2px);
+}
+
+.connect-icon { font-size: 22px; display: block; margin-bottom: 6px; }
+.connect-label { font-size: 10px; color: var(--g); letter-spacing: 0.12em; text-transform: uppercase; }
+.connect-val { font-size: 11px; color: var(--dim); margin-top: 2px; word-break: break-all; }
+
+/* ── FINAL MESSAGE ── */
+.final-msg {
+  text-align: center;
+  padding: 8px 0;
+}
+
+.final-msg .quote {
+  font-size: 14px;
+  color: var(--dim);
+  letter-spacing: 0.08em;
+  line-height: 2;
+}
+
+.final-msg .quote span { color: var(--g); }
+
+/* ── VISITOR BADGE ── */
+.visitor-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--dim);
+}
+
+.visitor-count {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  color: var(--g);
+  letter-spacing: 0.1em;
+}
+
+/* ── SNAKE CONTRIB ── */
+.contrib-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.contrib-wrap img { width: 100%; display: block; }
+
+/* ── HEX DECORATION ── */
+.hex-row {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 24px;
+  opacity: 0.4;
+}
+
+.hex {
+  width: 10px; height: 10px;
+  background: var(--g);
+  clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+  animation: hexPulse 2s ease-in-out infinite;
+}
+
+.hex:nth-child(2) { animation-delay: 0.3s; }
+.hex:nth-child(3) { animation-delay: 0.6s; }
+.hex:nth-child(4) { animation-delay: 0.9s; }
+.hex:nth-child(5) { animation-delay: 1.2s; }
+
+@keyframes hexPulse {
+  0%,100% { opacity: 0.3; transform: scale(0.85); }
+  50%      { opacity: 1;   transform: scale(1); }
+}
+
+/* ── OMNITRIX MINI (top bar) ── */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
+  font-size: 11px;
+  color: var(--dim);
+  letter-spacing: 0.1em;
+}
+
+.top-bar-left { display: flex; align-items: center; gap: 8px; }
+
+.top-dot {
+  width: 7px; height: 7px;
+  background: var(--g);
+  border-radius: 50%;
+  box-shadow: 0 0 6px var(--g);
+  animation: blink-cursor 1.2s step-end infinite;
+}
+
+.top-bar-right { color: var(--g); font-size: 10px; }
+
+/* responsive */
+@media (max-width: 600px) {
+  .about-grid      { grid-template-columns: 1fr; }
+  .stats-grid      { grid-template-columns: 1fr; }
+  .interests-grid  { grid-template-columns: 1fr 1fr; }
+  .connect-grid    { grid-template-columns: 1fr; }
+  .hero-name       { font-size: 28px; }
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- TOP STATUS BAR -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <div class="top-dot"></div>
+      <span>omnitrix_profile.exe</span>
+    </div>
+    <div class="top-bar-right">SYSTEM ONLINE // UDAY-KIRANK</div>
+  </div>
+
+  <!-- HEX DECORATION -->
+  <div class="hex-row">
+    <div class="hex"></div><div class="hex"></div><div class="hex"></div>
+    <div class="hex"></div><div class="hex"></div>
+  </div>
+
+  <!-- ── HERO ── -->
+  <div class="section hero">
+    <div class="hero-deco tl"></div>
+    <div class="hero-deco tr"></div>
+    <div class="hero-deco bl"></div>
+    <div class="hero-deco br"></div>
+    <div class="hero-pulse"></div>
+    <div class="hero-pulse"></div>
+
+    <div class="hero-name">Uday<span>Kiran</span>K</div>
+    <div class="hero-sub">cs student · iiit dharwad · india</div>
+
+    <div class="typing-row">
+      <span style="color:var(--dim); font-size:13px;">&gt;&nbsp;</span>
+      <span class="typing-text" id="typing"></span>
+      <span class="typing-cursor"></span>
+    </div>
+  </div>
+
+  <!-- ── BOOT SEQUENCE ── -->
+  <div class="section">
+    <div class="sec-title">~/boot_sequence</div>
+    <div class="terminal">
+      <div><span class="prompt">[omnitrix]$ </span><span class="cmd">init profile</span></div>
+      <div><span class="prompt">&gt; </span><span class="val">loading user:</span> uday-kirank</div>
+      <div><span class="prompt">&gt; </span><span class="val">role:</span> full stack developer</div>
+      <div><span class="prompt">&gt; </span><span class="val">interests:</span> cybersecurity · blockchain · gaming</div>
+      <div><span class="prompt">&gt; </span><span class="val">status:</span> building, breaking, learning</div>
+      <div><span class="prompt">&gt; </span><span class="val">system:</span> <span class="cmd">online ✓</span></div>
+    </div>
+  </div>
+
+  <!-- ── ABOUT ── -->
+  <div class="section">
+    <div class="sec-title">~/about_me</div>
+    <div class="about-grid">
+      <div class="about-item">
+        <span class="icon">🎓</span>
+        <div><strong>education</strong>CS Student @ IIIT Dharwad</div>
+      </div>
+      <div class="about-item">
+        <span class="icon">⚡</span>
+        <div><strong>focus</strong>Scalable &amp; reliable systems</div>
+      </div>
+      <div class="about-item">
+        <span class="icon">🔧</span>
+        <div><strong>experience</strong>Full stack · Mobile · Blockchain</div>
+      </div>
+      <div class="about-item">
+        <span class="icon">🔐</span>
+        <div><strong>exploring</strong>Cybersecurity &amp; CTFs</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STACK ── -->
+  <div class="section">
+    <div class="sec-title">~/tech_stack</div>
+
+    <div class="stack-group">
+      <div class="stack-label">// languages</div>
+      <div class="tech-chips">
+        <div class="chip highlight">C</div>
+        <div class="chip highlight">C++</div>
+        <div class="chip highlight">Java</div>
+        <div class="chip highlight">JavaScript</div>
+        <div class="chip">Python</div>
+        <div class="chip">Solidity</div>
+      </div>
+    </div>
+
+    <div class="stack-group">
+      <div class="stack-label">// frontend</div>
+      <div class="tech-chips">
+        <div class="chip highlight">React</div>
+        <div class="chip highlight">React Native</div>
+        <div class="chip">Tailwind CSS</div>
+        <div class="chip">Bootstrap</div>
+        <div class="chip">HTML</div>
+        <div class="chip">CSS</div>
+      </div>
+    </div>
+
+    <div class="stack-group">
+      <div class="stack-label">// backend &amp; infra</div>
+      <div class="tech-chips">
+        <div class="chip highlight">Node.js</div>
+        <div class="chip highlight">Express</div>
+        <div class="chip">PostgreSQL</div>
+        <div class="chip">MongoDB</div>
+        <div class="chip">Docker</div>
+        <div class="chip">Linux</div>
+        <div class="chip">Git</div>
+      </div>
+    </div>
+
+    <div class="stack-group" style="margin-bottom:0;">
+      <div class="stack-label">// other</div>
+      <div class="tech-chips">
+        <div class="chip">Unity</div>
+        <div class="chip">Postman</div>
+        <div class="chip">Ethereum / Web3</div>
+        <div class="chip">WebSockets</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PROJECTS ── -->
+  <div class="section">
+    <div class="sec-title">~/featured_missions</div>
+
+    <div class="project-card">
+      <div class="proj-header">
+        <div class="proj-name">Sparkur — Food Delivery Platform</div>
+        <div class="proj-status status-live">live</div>
+      </div>
+      <div class="proj-desc">Full-stack food delivery app with role-based access, real-time notifications, and concurrent-user handling.</div>
+      <div class="proj-tags">
+        <span class="proj-tag">Node.js</span>
+        <span class="proj-tag">PostgreSQL</span>
+        <span class="proj-tag">Tailwind CSS</span>
+        <span class="proj-tag">WebSockets</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-header">
+        <div class="proj-name">MedTrack — Healthcare Assistant</div>
+        <div class="proj-status status-wip">in progress</div>
+      </div>
+      <div class="proj-desc">Mobile app for managing prescriptions and analyzing lab reports using OCR with privacy-focused design.</div>
+      <div class="proj-tags">
+        <span class="proj-tag">React Native</span>
+        <span class="proj-tag">Node.js</span>
+        <span class="proj-tag">OCR</span>
+        <span class="proj-tag">RBAC</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-header">
+        <div class="proj-name">AdReward — Decentralized Ad Platform</div>
+        <div class="proj-status status-wip">in progress</div>
+      </div>
+      <div class="proj-desc">Blockchain system that rewards users for verified ad engagement, integrated with MetaMask and React frontend.</div>
+      <div class="proj-tags">
+        <span class="proj-tag">Solidity</span>
+        <span class="proj-tag">Ethereum</span>
+        <span class="proj-tag">React</span>
+        <span class="proj-tag">MetaMask</span>
+      </div>
+    </div>
+
+    <div class="project-card" style="margin-bottom:0;">
+      <div class="proj-header">
+        <div class="proj-name">Tic Tac Toe AI</div>
+        <div class="proj-status status-live">live</div>
+      </div>
+      <div class="proj-desc">Web-based multiplayer game with AI powered by Alpha-Beta Pruning and real-time gameplay via WebSockets.</div>
+      <div class="proj-tags">
+        <span class="proj-tag">JavaScript</span>
+        <span class="proj-tag">WebSockets</span>
+        <span class="proj-tag">Alpha-Beta Pruning</span>
+        <span class="proj-tag">AI</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STATS ── -->
+  <div class="section">
+    <div class="sec-title">~/combat_stats</div>
+    <div class="stats-grid">
+      <img src="https://github-readme-stats.vercel.app/api?username=Uday-KiranK&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=00000000&title_color=6ee600&icon_color=6ee600&text_color=a0c870" alt="GitHub Stats"/>
+      <img src="https://streak-stats.demolab.com?user=Uday-KiranK&theme=dark&hide_border=true&background=00000000&ring=6ee600&fire=6ee600&currStreakLabel=6ee600&sideLabels=6ee600&dates=4a6a20" alt="Streak Stats"/>
+    </div>
+  </div>
+
+  <!-- ── CONTRIBUTION SNAKE ── -->
+  <div class="section">
+    <div class="sec-title">~/contribution_grid</div>
+    <div class="contrib-wrap">
+      <img src="https://github.com/Uday-KiranK/Uday-KiranK/blob/output/github-contribution-grid-snake.svg" alt="contribution snake"/>
+    </div>
+  </div>
+
+  <!-- ── INTERESTS ── -->
+  <div class="section">
+    <div class="sec-title">~/alien_forms</div>
+    <div class="interests-grid">
+      <div class="interest-card">
+        <span class="interest-icon">🔐</span>
+        <div class="interest-label">Cybersecurity</div>
+      </div>
+      <div class="interest-card">
+        <span class="interest-icon">🎮</span>
+        <div class="interest-label">Game Dev &amp; Gaming</div>
+      </div>
+      <div class="interest-card">
+        <span class="interest-icon">⛓️</span>
+        <div class="interest-label">Blockchain</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CONNECT ── -->
+  <div class="section">
+    <div class="sec-title">~/establish_link</div>
+    <div class="connect-grid">
+      <a class="connect-link" href="mailto:uday.kottakota.k@gmail.com">
+        <span class="connect-icon">📡</span>
+        <div class="connect-label">Email</div>
+        <div class="connect-val">uday.kottakota.k@gmail.com</div>
+      </a>
+      <a class="connect-link" href="https://linkedin.com/in/uday-kiran-k-aa0710340" target="_blank">
+        <span class="connect-icon">🛰️</span>
+        <div class="connect-label">LinkedIn</div>
+        <div class="connect-val">uday-kiran-k</div>
+      </a>
+      <a class="connect-link" href="https://github.com/Uday-KiranK" target="_blank">
+        <span class="connect-icon">🔭</span>
+        <div class="connect-label">GitHub</div>
+        <div class="connect-val">Uday-KiranK</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- ── VISITORS ── -->
+  <div class="section">
+    <div class="sec-title">~/visitors</div>
+    <div class="visitor-row">
+      <span>profile_views:</span>
+      <img src="https://komarev.com/ghpvc/?username=Uday-KiranK&label=&color=6ee600&style=flat" alt="views" style="border-radius:4px;"/>
+    </div>
+  </div>
+
+  <!-- ── LOOP ── -->
+  <div class="section">
+    <div class="sec-title">~/core_loop</div>
+    <div class="terminal">
+      <div><span class="comment">// the infinite loop</span></div>
+      <div><span class="cmd">while</span><span class="prompt">(true) {</span></div>
+      <div>&nbsp;&nbsp;<span class="val">learn</span><span class="prompt">();</span></div>
+      <div>&nbsp;&nbsp;<span class="val">build</span><span class="prompt">();</span></div>
+      <div>&nbsp;&nbsp;<span class="val">break</span><span class="prompt">();</span></div>
+      <div>&nbsp;&nbsp;<span class="val">repeat</span><span class="prompt">();</span></div>
+      <div><span class="prompt">}</span></div>
+    </div>
+  </div>
+
+  <!-- ── FINAL MESSAGE ── -->
+  <div class="section final-msg">
+    <div class="sec-title">~/final_message</div>
+    <div class="quote">
+      <span>&gt;</span> everything happens for our own good…<br/>
+      <span>&gt;</span> even when the code breaks for the millionth time.
+    </div>
+  </div>
+
+  <!-- bottom hex decoration -->
+  <div class="hex-row" style="margin-bottom:0; margin-top: 8px;">
+    <div class="hex"></div><div class="hex"></div><div class="hex"></div>
+    <div class="hex"></div><div class="hex"></div>
+  </div>
+
+</div><!-- /page -->
+
+<script>
+// ── TYPING ANIMATION ──
+const lines = [
+  "Building scalable apps",
+  "Exploring cybersecurity",
+  "Breaking and fixing code",
+  "Learning every day",
+  "Full Stack Developer",
+  "Gamer At Heart",
+];
+
+let li = 0, ci = 0, deleting = false;
+const el = document.getElementById("typing");
+
+function type() {
+  const word = lines[li];
+  if (!deleting) {
+    el.textContent = word.slice(0, ++ci);
+    if (ci === word.length) { deleting = true; setTimeout(type, 1800); return; }
+    setTimeout(type, 65);
+  } else {
+    el.textContent = word.slice(0, --ci);
+    if (ci === 0) { deleting = false; li = (li + 1) % lines.length; setTimeout(type, 300); return; }
+    setTimeout(type, 35);
+  }
+}
+type();
+</script>
+</body>
+</html>
