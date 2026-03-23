@@ -1,16 +1,17 @@
 name: Update Stats
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 */6 * * *"
-  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -20,10 +21,10 @@ jobs:
       - name: Run script
         run: node scripts/generate-stats.js
 
-      - name: Commit changes
+      - name: Commit updated SVG
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add .
+          git add svgs/stats.svg
           git commit -m "update stats" || echo "no changes"
           git push
