@@ -9,6 +9,8 @@
       <path d="M40 0L0 0 0 40" fill="none" stroke="#6ee600" stroke-width="0.3" opacity="0.07"/>
     </pattern>
   </defs>
+  
+  <!-- Background (non-clickable) -->
   <rect width="860" height="160" rx="12" fill="#0d0d0d"/>
   <rect width="860" height="160" rx="12" fill="url(#g)"/>
   <rect width="860" height="2" rx="1" fill="url(#tl)"/>
@@ -17,16 +19,28 @@
   <path d="M820 16L844 16L844 40" fill="none" stroke="#2a5000" stroke-width="1.5"/>
   <text x="32" y="44" font-family="monospace" font-size="11" fill="#6ee600" letter-spacing="3" font-weight="bold">&#9658; ~/ESTABLISH_LINK</text>
   <rect x="32" y="50" width="796" height="1" fill="#1a3a00"/>
-  <rect x="32" y="66" width="256" height="74" rx="8" fill="#080808" stroke="#1a3a00" stroke-width="1"/>
-  <text x="60" y="96" font-family="monospace" font-size="22">&#128225;</text>
-  <text x="100" y="92" font-family="monospace" font-size="9" fill="#3d8000" letter-spacing="2">EMAIL</text>
-  <text x="100" y="110" font-family="monospace" font-size="10" fill="#6ee600">uday.kottakota.k@gmail.com</text>
-  <rect x="302" y="66" width="256" height="74" rx="8" fill="#080808" stroke="#1a3a00" stroke-width="1"/>
-  <text x="330" y="96" font-family="monospace" font-size="22">&#128752;</text>
-  <text x="370" y="92" font-family="monospace" font-size="9" fill="#3d8000" letter-spacing="2">LINKEDIN</text>
-  <text x="370" y="110" font-family="monospace" font-size="10" fill="#6ee600">uday-kiran-k-aa0710340</text>
-  <rect x="572" y="66" width="256" height="74" rx="8" fill="#080808" stroke="#1a3a00" stroke-width="1"/>
-  <text x="600" y="96" font-family="monospace" font-size="22">&#128301;</text>
-  <text x="640" y="92" font-family="monospace" font-size="9" fill="#3d8000" letter-spacing="2">GITHUB</text>
-  <text x="640" y="110" font-family="monospace" font-size="10" fill="#6ee600">github.com/Uday-KiranK</text>
+  
+  <!-- EMAIL - Clickable -->
+  <a href="mailto:uday.kottakota.k@gmail.com">
+    <rect x="32" y="66" width="256" height="74" rx="8" fill="#080808" stroke="#1a3a00" stroke-width="1" style="cursor:pointer"/>
+    <text x="60" y="96" font-family="monospace" font-size="22" style="pointer-events:none">&#128225;</text>
+    <text x="100" y="92" font-family="monospace" font-size="9" fill="#3d8000" letter-spacing="2" style="pointer-events:none">EMAIL</text>
+    <text x="100" y="110" font-family="monospace" font-size="10" fill="#6ee600" style="pointer-events:none">uday.kottakota.k@gmail.com</text>
+  </a>
+  
+  <!-- LINKEDIN - Clickable -->
+  <a href="https://linkedin.com/in/uday-kiran-k-aa0710340" target="_blank">
+    <rect x="302" y="66" width="256" height="74" rx="8" fill="#080808" stroke="#1a3a00" stroke-width="1" style="cursor:pointer"/>
+    <text x="330" y="96" font-family="monospace" font-size="22" style="pointer-events:none">&#128752;</text>
+    <text x="370" y="92" font-family="monospace" font-size="9" fill="#3d8000" letter-spacing="2" style="pointer-events:none">LINKEDIN</text>
+    <text x="370" y="110" font-family="monospace" font-size="10" fill="#6ee600" style="pointer-events:none">uday-kiran-k-aa0710340</text>
+  </a>
+  
+  <!-- GITHUB - Clickable -->
+  <a href="https://github.com/Uday-KiranK" target="_blank">
+    <rect x="572" y="66" width="256" height="74" rx="8" fill="#080808" stroke="#1a3a00" stroke-width="1" style="cursor:pointer"/>
+    <text x="600" y="96" font-family="monospace" font-size="22" style="pointer-events:none">&#128301;</text>
+    <text x="640" y="92" font-family="monospace" font-size="9" fill="#3d8000" letter-spacing="2" style="pointer-events:none">GITHUB</text>
+    <text x="640" y="110" font-family="monospace" font-size="10" fill="#6ee600" style="pointer-events:none">github.com/Uday-KiranK</text>
+  </a>
 </svg>
