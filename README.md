@@ -1,22 +1,32 @@
 <h1 align="center">Hi, I'm Uday Kiran</h1>
+
 <p align="center">
-  Full Stack Developer | DSA Monk | Cyber Security Enthusiast | Computer Science Student |
+  Full Stack Developer • Cybersecurity Enthusiast • Computer Science Student
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?lines=Building+scalable+apps;Exploring+cybersecurity;Breaking+and+fixing+code;Learning+every+day&center=true&width=500&height=40">
 </p>
 
 ---
 
 ## About Me
 
-Hi, I'm UK, I’m a Computer Science student at IIIT Dharwad with an interest in building scalable, robust applications and understanding how systems actually work.
+Hi, I'm UK. I’m a Computer Science student at IIIT Dharwad, focused on building scalable and reliable systems.
 
-I’ve worked on full-stack applications, mobile apps, and explored blockchain-based systems. I’m also learning cybersecurity and improving my development skills.
+I’ve worked on full-stack applications, mobile apps, and blockchain-based systems. Currently, I’m exploring cybersecurity while continuing to improve my development skills.
 
 ---
 
 ## Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,java,html,css,js,nodejs,express,react,bootstrap,python,unity,git,linux" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,java,html,css,js,nodejs,express,react,bootstrap,tailwind,python,unity,git,linux,docker,mongodb,postgres" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Solidity-black?style=for-the-badge&logo=solidity" />
+  <img src="https://img.shields.io/badge/Postman-orange?style=for-the-badge&logo=postman" />
 </p>
 
 ---
@@ -63,7 +73,12 @@ A web-based multiplayer Tic Tac Toe game with AI move recommendations.
 ## GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Uday-KiranK&show_icons=true&theme=default" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Uday-KiranK&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Uday-KiranK&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=Uday-KiranK&theme=tokyonight&hide_border=true" />
 </p>
 
 ---
