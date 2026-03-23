@@ -1,5 +1,3 @@
-# &nbsp;
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/Uday-KiranK/Uday-KiranK/main/ben_banner.gif" width="860"/>
 </p>
