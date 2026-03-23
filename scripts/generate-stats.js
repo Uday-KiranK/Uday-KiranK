@@ -62,4 +62,3 @@ async function getStats() {
 }
 
 getStats();
-```
