@@ -1,4 +1,5 @@
-import fs from "fs";
+```js
+const fs = require("fs");
 
 const username = "Uday-KiranK";
 
@@ -23,3 +24,4 @@ async function getStats() {
 }
 
 getStats();
+```
