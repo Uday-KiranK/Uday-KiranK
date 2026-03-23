@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <code>▶ ~/contributions</code>
+  <code>▶ contributions</code>
 </p>
 
 <p align="center">
