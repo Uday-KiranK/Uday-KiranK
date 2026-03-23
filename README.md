@@ -1,6 +1,5 @@
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Uday-KiranK/Uday-KiranK/main/omnitrix-banner.gif" width="860"/>
+  <img src="https://raw.githubusercontent.com/Uday-KiranK/Uday-KiranK/main/ben_banner.gif" width="860"/>
 </p>
 
 ---
@@ -41,16 +40,3 @@
 ```bash
 > while(true) { learn(); build(); break(); repeat(); }
 ```
-```
-
-Commit to `main`.
-
----
-
-## Step 3 — Enable GitHub Pages
-
-Go to repo **Settings → Pages → Source** → set to `main` branch, `/ (root)` → **Save**.
-
-Your full alien UI README will then be live at:
-```
-https://uday-kirank.github.io/Uday-KiranK/readme-omnitrix.html
