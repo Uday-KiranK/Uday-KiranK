@@ -20,7 +20,7 @@
     <img src="https://raw.githubusercontent.com/Uday-KiranK/Uday-KiranK/main/svgs/projects.svg" width="860"/>
   </a>
 </p>
-### &nbsp;&nbsp;&nbsp;&nbsp;`▶ ~/stats`
+### &nbsp;&nbsp;&nbsp;&nbsp;
 <p align="center">
   <a href="#">
     <img src="https://raw.githubusercontent.com/Uday-KiranK/Uday-KiranK/main/svgs/stats.svg" width="860"/>
@@ -37,7 +37,7 @@
     <img src="https://raw.githubusercontent.com/Uday-KiranK/Uday-KiranK/main/svgs/interests.svg" width="860"/>
   </a>
 </p>
-### &nbsp;&nbsp;&nbsp;&nbsp;`▶ ~/establish_link`
+### &nbsp;&nbsp;&nbsp;&nbsp;
 <p align="center">
   <a href="#">
     <img src="https://raw.githubusercontent.com/Uday-KiranK/Uday-KiranK/main/svgs/connect.svg" width="860"/>
